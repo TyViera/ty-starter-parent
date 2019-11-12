@@ -34,7 +34,11 @@
 
   <dependencyManagement>
     <dependencies>
-
+      <dependency>
+        <groupId>pe.ty</groupId>
+        <artifactId>ty-starter-web</artifactId>
+        <version>${ty-framework.version}</version>
+      </dependency>
       <dependency>
         <groupId>pe.ty</groupId>
         <artifactId>ty-starter-test</artifactId>
