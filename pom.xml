@@ -33,6 +33,7 @@
     <dependency>
       <groupId>pe.ty</groupId>
       <artifactId>ty-core-dependencies</artifactId>
+      <version>${ty-framework.version}</version>
     </dependency>
   </dependencies>
 
@@ -42,10 +43,17 @@
         <groupId>pe.ty</groupId>
         <artifactId>ty-core-dependencies</artifactId>
         <version>${ty-framework.version}</version>
+        <type>pom</type>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>pe.ty</groupId>
         <artifactId>ty-starter-web</artifactId>
+        <version>${ty-framework.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>pe.ty</groupId>
+        <artifactId>ty-starter-webflux</artifactId>
         <version>${ty-framework.version}</version>
       </dependency>
       <dependency>
@@ -58,6 +66,10 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
       <plugin>
         <groupId>org.jfrog.buildinfo</groupId>
         <artifactId>artifactory-maven-plugin</artifactId>
